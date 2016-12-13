@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listOfComments"
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:layout_weight="0.07"
+        android:background="#999999" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_weight="0.05"
+        android:background="#202020"
+        android:text="ADD MY COMMENT"
+        android:textColor="#ffFF00" />
+
+</LinearLayout>

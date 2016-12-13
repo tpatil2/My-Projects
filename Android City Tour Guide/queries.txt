@@ -1,0 +1,61 @@
+create database db5775;
+
+use db5775;
+
+
+create table area( 
+areaName varchar(50),
+longitude varchar(100),
+latitude varchar(100)
+);
+
+
+create table user( 
+uid varchar(50) primary key,
+uName varchar(50),
+password varchar(50),
+address varchar(250),
+mobile varchar(15)
+);
+
+
+
+create table categories(
+categoryname varchar(50)
+);
+
+
+create table Location(
+tid int,
+category varchar(50) references categories(categoryname),
+area varchar(50) references area(areaname),
+Locationname varchar(150),
+image blob,
+description varchar(200)
+);
+
+
+create table comments(
+cid int,
+tid int, 
+uid varchar(75),
+email varchar(75),
+mobile varchar(15),
+comments varchar(250),
+rating float,
+cdate date
+);
+
+
+create table advt(
+aid int,
+contents varchar(250)
+);
+
+create table new_entry_suggessions(
+sid int,
+uid int,
+locationname varchar(150),
+category varchar(50),
+description varchar(200)
+);
