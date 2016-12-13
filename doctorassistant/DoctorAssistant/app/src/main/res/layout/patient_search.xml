@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/mbut">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Search and Update Patient"
+            android:id="@+id/textView2" />
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+
+                    android:id="@+id/pat_id1"
+                    android:hint="Enter Patient ID"
+                    android:layout_weight="1" />
+
+
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="60dp">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/patient1_search"
+                    android:text="SEARCH "
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/shape2"
+                    />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+    </RelativeLayout>
+</LinearLayout>
